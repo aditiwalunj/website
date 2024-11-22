@@ -1,56 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Test Page</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f3f4f6;
-      color: #333;
-    }
-    header {
-      background-color: #4CAF50;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    main {
-      padding: 20px;
-      text-align: center;
-    }
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-    }
-    a {
-      color: #4CAF50;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Your Name - Data Scientist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, 
+                rgba(255, 153, 102, 0.6),  /* Soft Orange */
+                rgba(255, 94, 98, 0.6),    /* Coral Pink */
+                rgba(255, 195, 0, 0.6)     /* Warm Yellow */
+            );
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: #333;
+            min-height: 100vh;
+        }
+
+        @keyframes gradientBG {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin: 20px auto;
+            width: 80%;
+            padding: 20px;
+            overflow: hidden;
+        }
+        header {
+            background: rgba(53, 66, 74, 0.7);
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            margin: 0;
+            text-align: center;
+        }
+        .project {
+            background: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .skills {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .skill {
+            background: #35424a;
+            color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #e8491d;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #ff6347;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Test Page</h1>
-  </header>
-  <main>
-    <p>Hello! This is a simple page hosted on <strong>GitHub Pages</strong>.</p>
-    <p>Feel free to edit this content and make it your own!</p>
-    <a href="https://github.com/">Visit GitHub</a>
-  </main>
-  <footer>
-    <p>© 2024 Your Name. All rights reserved.</p>
-  </footer>
+    <header>
+        <div class="container">
+            <h1>Your Name</h1>
+            <p>Data Scientist | Machine Learning Engineer</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Passionate data scientist with expertise in machine learning, statistical analysis, and data visualization. Dedicated to solving complex problems through data-driven insights.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill">Python</div>
+                <div class="skill">Machine Learning</div>
+                <div class="skill">Data Analysis</div>
+                <div class="skill">SQL</div>
+                <div class="skill">Data Visualization</div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1: Machine Learning Prediction</h3>
+                <p>Developed a predictive model using advanced machine learning techniques to forecast...</p>
+                <button onclick="showProjectDetails()">Learn More</button>
+            </div>
+            <div class="project">
+                <h3>Project 2: Data Visualization Dashboard</h3>
+                <p>Created an interactive dashboard to visualize complex data sets and provide actionable insights...</p>
+                <button onclick="showProjectDetails()">Learn More</button>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: youremail@example.com</p>
+            <p>LinkedIn: Your LinkedIn Profile</p>
+            <p>GitHub: Your GitHub Profile</p>
+        </section>
+    </div>
+
+    <script>
+        function showProjectDetails() {
+            alert('Project details would be shown here. This is a placeholder for more interactive functionality.');
+        }
+
+        // Optional: Add some interactivity
+        document.querySelectorAll('.project button').forEach(button => {
+            button.addEventListener('mouseover', (e) => {
+                e.target.style.backgroundColor = '#ff6347';
+            });
+            button.addEventListener('mouseout', (e) => {
+                e.target.style.backgroundColor = '#e8491d';
+            });
+        });
+    </script>
 </body>
 </html>
