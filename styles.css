@@ -1,71 +1,67 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1e1e1e; /* Dark background like a code editor */
+    color: #dcdcdc; /* Light text color */
+}
+
+.compiler {
+    width: 80%;
+    margin: auto;
+    border: 1px solid #444; /* Border to mimic a code editor */
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header {
-    background: linear-gradient(to right, #6a5acd, #836fff);
-    color: white;
-    padding: 20px;
-    text-align: center;
+    background-color: #333; /* Dark header */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
 }
 
 nav ul {
     list-style-type: none;
+    margin: 0;
     padding: 0;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin-left: 20px;
 }
 
 nav ul li a {
-    color: white;
+    color: #dcdcdc;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
-#hero {
-    text-align: center;
-    padding: 50px 20px;
+nav ul li a:hover {
+    color: #ffcc00; /* Change color on hover */
 }
 
-#hero button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #6a5acd;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+main {
     padding: 20px;
 }
 
-.project {
-    background-color: #e0e0e0;
-    padding: 20px;
-    text-align: center;
-    border-radius: 8px;
-}
-
-.internship {
+section {
     margin: 20px 0;
+    border: 1px solid #444; /* Section border */
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #2a2a2a; /* Darker background for sections */
 }
 
-#contactForm {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: auto;
+footer {
+    background-color: #333; /* Dark footer */
+    text-align: center;
+    padding: 10px;
 }
-
-#contactForm input, #contactForm textarea {
-    margin: 10px 0;
-    padding: 10px
