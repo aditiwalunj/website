@@ -3,13 +3,14 @@ body {
     height: 100vh; /* Full height of the viewport */
     background: linear-gradient(to right, #e0c3fc, #8ec5fc); /* Light purple to light pink */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start; /* Align items to the start (left) */
+    align-items: flex-start; /* Align items to the start (top) */
     color: #333; /* Text color */
     font-family: Arial, sans-serif; /* Font style */
+    padding: 20px; /* Add some padding to the body */
 }
 
-h1 {
-    font-size: 3em; /* Font size for the heading */
-    text-align: center; /* Center the text */
+.greeting {
+    font-size: 1.5em; /* Font size for the greeting */
+    text-align: left; /* Align text to the left */
 }
